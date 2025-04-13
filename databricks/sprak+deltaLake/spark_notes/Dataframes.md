@@ -56,7 +56,7 @@ csv_df = spark.read.csv("path/to/your/file.csv", header=True, inferSchema=True)
 # json_df = spark.read.json("path/to/your/file.json")
 ```
 
-## 🛠 2. Basic DataFrame Operations
+## 🛠 2. Basic DataFrame Operations - Analysis
 ### 🔍 Viewing Data
 
 ```python
@@ -119,6 +119,7 @@ print("Number of departments:", employees_df.select("Department").distinct().cou
 employees_df.select("Department").distinct().show()
 
 ```
+
 
 ## 📚 Resources
 - [PySpark DataFrame Documentation](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html)  
